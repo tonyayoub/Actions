@@ -1,0 +1,28 @@
+name: iOS Test
+
+on:
+  push:
+    branches: [ main ]  # or your default branch name
+  pull_request:
+    branches: [ main ]  # trigger on pull requests as well
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v2
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.2.2  # or your desired Ruby version
+
+    - name: Install Bundler and Gems
+      run: |
+        gem install bundler
+        bundle install
+
+    - name: Run Tests with Fastlane
+      run: bundle exec fastlane ios test
