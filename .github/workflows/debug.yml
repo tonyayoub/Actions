@@ -1,0 +1,15 @@
+name: Debug Runner
+
+on:
+  workflow_dispatch:
+
+jobs:
+  debug:
+    runs-on: macOS-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
