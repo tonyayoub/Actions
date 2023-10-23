@@ -7,8 +7,8 @@ on:
     branches: [ main ]  # trigger on pull requests as well
 
 jobs:
-  build:
-    runs-on: macos-latest
+  Actions Tests:
+    runs-on: macos-13
 
     steps:
     - name: List installed Xcode versions
