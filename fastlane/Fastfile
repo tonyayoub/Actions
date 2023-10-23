@@ -9,7 +9,7 @@ platform :ios do
     scan(
       project: "Actions.xcodeproj",
       scheme: "Actions",
-      destination: 'platform=iOS Simulator,name=iPhone 14 Pro Max'
+      destination: 'platform:iOS, id:dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name:Any iOS Device'
     )
   end
 end
