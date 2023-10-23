@@ -4,18 +4,12 @@ fastlane_version "2.216.0"
 default_platform(:ios)
 
 platform :ios do
-  before_all do
-    xcversion(version: "~> 15.0")
-    clean_build_artifacts # Delete the local dSYM files
-    clear_derived_data
-  end
-
   desc "Run the tests for Actions Scheme"
   lane :test do
     scan(
       project: "Actions.xcodeproj",
       scheme: "Actions",
-      destination: 'platform=macOS,arch=x86_64'
+      device: "iPhone 14"
     )
   end
 end
