@@ -13,9 +13,9 @@ platform :ios do
   desc "Run the tests for Actions Scheme"
   lane :test do
     scan(
-      project: "Actions.xcodeproj",
-      scheme: "Actions",
-      destination: "platform=iOS, id=dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name=Any iOS Device"
+        clean: true,
+        scheme: "Actions",
+        device: "iPhone 14"
     )
   end
 end
