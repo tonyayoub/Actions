@@ -9,7 +9,7 @@ platform :ios do
     scan(
       project: "Actions.xcodeproj",
       scheme: "Actions",
-      destination: 'platform=iOS Simulator,name=iPhone 12,OS=14.4'
+      destination: 'platform=iOS Simulator,name=Any iOS Simulator Device'
     )
   end
 end
