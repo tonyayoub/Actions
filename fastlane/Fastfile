@@ -15,7 +15,7 @@ platform :ios do
     scan(
       project: "Actions.xcodeproj",
       scheme: "Actions",
-      device: "iPhone 14"
+      destination: "platform=iOS, id=dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name=Any iOS Device"
     )
   end
 end
