@@ -15,7 +15,7 @@ platform :ios do
     scan(
         clean: true,
         scheme: "Actions",
-        device: "iPhone 12 Pro"
+        destination: 'platform=iOS Simulator,id=dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder'
     )
   end
 end
