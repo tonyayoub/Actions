@@ -15,7 +15,7 @@ platform :ios do
     scan(
         clean: true,
         scheme: "Actions",
-        device: "iPhone 14"
+        device: "iPhone 12 Pro"
     )
   end
 end
