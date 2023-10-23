@@ -11,6 +11,9 @@ jobs:
     runs-on: macos-latest
 
     steps:
+    - name: List installed Xcode versions
+      run: ls /Applications | grep Xcode
+
     - name: Checkout Repo
       uses: actions/checkout@v2
 
