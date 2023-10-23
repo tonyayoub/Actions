@@ -5,7 +5,7 @@ default_platform(:ios)
 
 platform :ios do
   before_all do
-    xcversion(version: "~> 15.0")
+    xcversion(version: "~> 14.0")
     clean_build_artifacts # Delete the local dSYM files
     clear_derived_data
   end
